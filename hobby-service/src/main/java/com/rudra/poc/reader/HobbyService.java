@@ -11,6 +11,7 @@ public class HobbyService {
 
 	public Employee addHobby(Employee employee) {
 		int hobbiesNumber = ThreadLocalRandom.current().nextInt(0, hobbies.length);
+		System.out.println("checking Hobby of employe with details: " +employee);
 		employee.setHobby(hobbies[hobbiesNumber]);
 		return employee;
 	}
