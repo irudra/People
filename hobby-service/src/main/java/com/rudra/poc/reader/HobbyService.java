@@ -10,7 +10,7 @@ public class HobbyService {
 	private String[] hobbies = { "Reading", "Playing chess", "Golf", "Coding", "running", "travelling" };
 
 	public Employee addHobby(Employee employee) {
-		int hobbiesNumber = ThreadLocalRandom.current().nextInt(0, hobbies.length + 1);
+		int hobbiesNumber = ThreadLocalRandom.current().nextInt(0, hobbies.length);
 		employee.setHobby(hobbies[hobbiesNumber]);
 		return employee;
 	}

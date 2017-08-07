@@ -24,18 +24,18 @@ public class Transformation {
 
 		String se = producer.requestBody("direct:getEmployee", null, String.class);
 		System.out.println(se);
-		se = producer.requestBody("direct:getEmployeeHobby", se, String.class);
-		System.out.println(se);
+		/*se = producer.requestBody("direct:getEmployeeHobby", se, String.class);
+		System.out.println(se);*/
 		Gson gson = new Gson();
 		Employee employee = gson.fromJson(se, Employee.class);
 		LOGGER.info("Received message  " + employee);
 		
-		/*
-		 * if (employee != null &&
-		 * employee.getDesignation().equalsIgnoreCase("Manager")) {
-		 * employee.setHobby("Golf"); return employee; } else {
-		 * employee.setHobby("Playing Football"); }
-		 */
+		
+		if (employee != null &&
+				employee.getDesignation().equalsIgnoreCase("Manager")) {
+			employee.setHobby("Golf"); return employee; } else {
+			employee.setHobby("Playing Football"); }
+			
 		return employee;
 	}
 }
