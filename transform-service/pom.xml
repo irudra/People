@@ -83,7 +83,7 @@
 	</dependency>
 		
 		<dependency>
-			<groupId>com.rudra.poc.reader</groupId>
+			<groupId>com.rudra.reader</groupId>
 			<artifactId>reader-service</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>

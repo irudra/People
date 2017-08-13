@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.rudra.poc.reader.Employee;
+import com.rudra.reader.domain.Employee;
 
 @RestController
 public class TransformationService {
@@ -16,7 +16,7 @@ public class TransformationService {
 	@Autowired
 	private Transformation transformation;
 	
-	@RequestMapping(value="/employeerule")
+	@RequestMapping(value="/employee/extra")
 	public Employee transformEmployee() {
 		LOGGER.info("***************Start transforming service******************");
 		Employee employee = transformation.transform();
