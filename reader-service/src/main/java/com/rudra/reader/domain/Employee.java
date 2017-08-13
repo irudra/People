@@ -1,4 +1,4 @@
-package com.rudra.poc.reader;
+package com.rudra.reader.domain;
 
 import java.io.Serializable;
 

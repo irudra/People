@@ -1,4 +1,4 @@
-package com.rudra.poc.reader;
+package com.rudra.reader.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Path("/api")
-public class ReaderService {
+public class ReaderController {
 
 	@Autowired
-	private PushEmployee employeeTest;
+	private EmployeeService employeeTest;
 
 	@GET
 	@Path("/employee")

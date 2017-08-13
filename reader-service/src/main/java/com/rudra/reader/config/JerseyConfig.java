@@ -1,7 +1,9 @@
-package com.rudra.poc.reader;
+package com.rudra.reader.config;
 
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
+
+import com.rudra.reader.service.ReaderController;
 
 @Component
 public class JerseyConfig extends ResourceConfig {
@@ -9,6 +11,6 @@ public class JerseyConfig extends ResourceConfig {
         registerEndpoints();
     }
     private void registerEndpoints() {
-       register(ReaderService.class);
+       register(ReaderController.class);
     }
 }

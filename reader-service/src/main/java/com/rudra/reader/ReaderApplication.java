@@ -1,4 +1,4 @@
-package com.rudra.poc.reader;
+package com.rudra.reader;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ReaderApplication {
 
 	public static void main(String[] args) throws Exception {
-		System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES","*");
 		SpringApplication.run(ReaderApplication.class, args);
 	}
 }
