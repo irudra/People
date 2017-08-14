@@ -1,4 +1,4 @@
-package com.rudra.poc.transform;
+package com.rudra.transform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

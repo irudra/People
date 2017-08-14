@@ -1,4 +1,4 @@
-package com.rudra.poc.transform;
+package com.rudra.transform.route;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;

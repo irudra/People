@@ -38,27 +38,24 @@
 		</dependency>
 
 		<dependency>
-    	<groupId>org.apache.camel</groupId>
-    	<artifactId>camel-spring-boot</artifactId>
-    	<version>2.18.2</version>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring-boot</artifactId>
+			<version>2.18.2</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-pool</artifactId>
-			<version>5.14.3</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jms</artifactId>
-			<version>4.3.7.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-camel</artifactId>
-			<version>5.14.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
@@ -77,18 +74,18 @@
 			<version>${camel.version}</version>
 		</dependency>
 		<dependency>
-    	<groupId>com.google.code.gson</groupId>
-    	<artifactId>gson</artifactId>
-    	<version>2.6.2</version>
-	</dependency>
-		
-		<dependency>
-			<groupId>com.rudra.reader</groupId>
-			<artifactId>reader-service</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
 		</dependency>
-	</dependencies>
 
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.10.19</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
