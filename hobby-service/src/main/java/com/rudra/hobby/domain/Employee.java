@@ -1,4 +1,4 @@
-package com.rudra.poc.hobby;
+package com.rudra.hobby.domain;
 
 import java.io.Serializable;
 
